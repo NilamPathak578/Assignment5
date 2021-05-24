@@ -1,3 +1,4 @@
+import 'package:elearning_app/Views/ComplaintForm.dart';
 import 'package:elearning_app/Views/login.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -17,6 +18,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.teal,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/second': (context) => HomePage(),
+      },
       builder: (context, widget) => ResponsiveWrapper.builder(
         ClampingScrollWrapper.builder(context, widget),
         defaultScale: true,
@@ -29,7 +35,7 @@ class MyApp extends StatelessWidget {
         ],
         background: Scaffold(),
       ),
-      home: LoginPage(),
+      //home: LoginPage(),
     );
   }
 }

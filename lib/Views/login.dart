@@ -167,11 +167,8 @@ class _LoginPageState extends State<LoginPage> {
                             // ),
                             FlatButton(
                               onPressed: () {
-                                _onsubmit();
-                                // Navigator.push(
-                                //     context,
-                                //     MaterialPageRoute(
-                                //         builder: (context) => QRViewExample()));
+                                //_onsubmit();
+                                Navigator.pushNamed(context, '/second');
                               },
                               child: Container(
                                 height: 60,
